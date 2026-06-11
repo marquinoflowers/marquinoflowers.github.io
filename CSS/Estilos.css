@@ -1,0 +1,188 @@
+﻿body {
+    background: #FFF5F7;
+    font-family: 'Segoe UI', sans-serif;
+    color: #555;
+}
+
+.romantic-header {
+    background: linear-gradient(135deg, #FFD6E0, #FFF0F5);
+    border-radius: 25px;
+    padding: 60px 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 25px rgba(255, 143, 171, 0.20);
+}
+
+    .romantic-header h1 {
+        color: #FF6F91;
+        font-weight: bold;
+    }
+
+    .romantic-header p {
+        font-size: 1.2rem;
+    }
+
+.heart-icon {
+    color: #FF8FAB;
+}
+
+.accordion-item {
+    border: none !important;
+    margin-bottom: 15px;
+    border-radius: 20px !important;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(255,143,171,0.15);
+}
+
+.accordion-button {
+    background: white;
+    font-weight: 600;
+    color: #FF6F91;
+}
+
+    .accordion-button:not(.collapsed) {
+        background: #FFE4EC;
+        color: #FF6F91;
+    }
+
+.accordion-body {
+    background: white;
+}
+
+.photo-romantic {
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.10);
+}
+
+.music-frame {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.floating-hearts {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -1;
+}
+
+    .floating-hearts span {
+        position: absolute;
+        color: rgba(255, 143, 171, 0.35);
+        font-size: 25px;
+        animation: floatHeart linear infinite;
+    }
+
+
+        .floating-hearts span:nth-child(1) {
+            left: 5%;
+            animation-duration: 12s;
+        }
+
+        .floating-hearts span:nth-child(2) {
+            left: 15%;
+            animation-duration: 18s;
+            font-size: 18px;
+        }
+
+        .floating-hearts span:nth-child(3) {
+            left: 30%;
+            animation-duration: 14s;
+        }
+
+        .floating-hearts span:nth-child(4) {
+            left: 45%;
+            animation-duration: 20s;
+        }
+
+        .floating-hearts span:nth-child(5) {
+            left: 60%;
+            animation-duration: 16s;
+        }
+
+        .floating-hearts span:nth-child(6) {
+            left: 75%;
+            animation-duration: 13s;
+        }
+
+        .floating-hearts span:nth-child(7) {
+            left: 85%;
+            animation-duration: 19s;
+        }
+
+        .floating-hearts span:nth-child(8) {
+            left: 95%;
+            animation-duration: 15s;
+        }
+
+
+@keyframes floatHeart {
+
+    from {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: .5;
+    }
+
+    80% {
+        opacity: .5;
+    }
+
+    to {
+        transform: translateY(-120px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+.romantic-header {
+    transition: all .4s ease;
+}
+
+    .romantic-header:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 35px rgba(255,143,171,.25);
+    }
+
+
+.music-card {
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.playlist-cover {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 20px;
+    transition: all .3s ease;
+    box-shadow: 0 8px 20px rgba(255,143,171,.25);
+}
+
+    .playlist-cover:hover {
+        transform: scale(1.03);
+        box-shadow: 0 12px 30px rgba(255,143,171,.35);
+    }
+
+
+.playlist-cover {
+    width: 20%;
+    max-width: 280px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    transition: all .3s ease;
+    box-shadow: 0 8px 20px rgba(255,143,171,.25);
+}
+
+    .playlist-cover:hover {
+        transform: scale(1.05) rotate(-2deg);
+    }
