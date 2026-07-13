@@ -247,3 +247,11 @@
         opacity: 0;
     }
 }
+
+.accordion-body > div {
+    margin-bottom: 1rem;
+}
+
+    .accordion-body > div:last-child {
+        margin-bottom: 0;
+    }
