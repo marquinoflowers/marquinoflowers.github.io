@@ -186,3 +186,64 @@
     .playlist-cover:hover {
         transform: scale(1.05) rotate(-2deg);
     }
+
+.counter-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.time-card {
+    width: 120px;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(255,143,171,.20);
+    transition: .3s;
+}
+
+    .time-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .time-card span {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #FF6F91;
+    }
+
+    .time-card small {
+        color: #777;
+    }
+
+@keyframes pop {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.18);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#loveMessage::after {
+    content: "|";
+    animation: blink .7s infinite;
+    color: #FF6F91;
+}
+
+@keyframes blink {
+
+    50% {
+        opacity: 0;
+    }
+}
